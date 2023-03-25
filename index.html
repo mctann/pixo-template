@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="font-inter">
+    <header>
+      <!-- This example requires Tailwind CSS v2.0+ -->
+      <nav>
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+                <svg
+                  class="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+                <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+                <svg
+                  class="hidden h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+            >
+              <div class="flex-shrink-0 flex items-center">
+                <img
+                  class="block h-8 w-auto"
+                  src="../dist/img/logo.png"
+                  alt="Workflow"
+                />
+              </div>
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:font-bold px-3 py-2 rounded-md text-sm font-medium"
+                    aria-current="page"
+                    >Pricing</a
+                  >
+
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:font-bold px-3 py-2 rounded-md text-sm font-medium"
+                    >About Us</a
+                  >
+
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:font-bold px-3 py-2 rounded-md text-sm font-medium"
+                    >Blog</a
+                  >
+                </div>
+              </div>
+              <div class="flex-1 flex space-x-4 items-center justify-end">
+                <a
+                    href="#"
+                    class="text-gray-500 hover:font-bold px-3 py-2 rounded-md text-sm font-medium"
+                    aria-current="page"
+                    >Sign In</a
+                  >
+                  <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-50 bg-gradient-to-br from-primary to-secondary rounded-full ">
+                    Book Now
+                 </a>  
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+              href="#"
+              class="text-gray-500 hover:font-bold block px-3 py-2 rounded-md text-base font-medium"
+              aria-current="page"
+              >Pricing</a
+            >
+
+            <a
+              href="#"
+              class="text-gray-500 hover:font-bold block px-3 py-2 rounded-md text-base font-medium"
+              >About Us</a
+            >
+
+            <a
+              href="#"
+              class="text-gray-500 hover:font-bold block px-3 py-2 rounded-md text-base font-medium"
+              >Blog</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+            <p class="mt-8 mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">Simple and clear images to showcase the best aspects of your product.</p>
+            <h1 class="mb-12 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">Turn your product that <span class="bg-clip-text text-transparent bg-gradient-to-br from-primary to-secondary">increase sales</h1>
+            <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-50 bg-gray-900 rounded-full ">
+                   Book Now
+                </a>  
+            </div>
+            <div class="flex justify-center items-center">
+               <img src="../dist/img/hero.png" alt="photography" class="rounded-lg shadow-lg">
+            </div>
+
+            <div class="px-4 text-center"> 
+                <div class="flex flex-wrap justify-center items-center my-14 text-gray-500 sm:justify-between">
+                    <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800">
+                        <span class="font-semibold text-gray-400">1000+ Big brands trust us</span>             
+                    </a>
+                    
+                    <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800">
+                        <img src="../dist/img/brand_1.png" alt="">                
+                    </a>
+                    <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800">
+                        <img src="../dist/img/brand_2.png" alt="">               
+                    </a>
+                    <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800">
+                        <img src="../dist/img/brand_3.png" alt="">                                            
+                    </a>      
+                    <a href="#" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800">
+                        <img src="../dist/img/brand_4.png" alt="">                                            
+                    </a>         
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+            <h1 class="mb-12 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">More Cameras,
+                <span class="bg-clip-text text-transparent bg-gradient-to-br from-primary to-secondary">More Attention</span></h1>
+            <p class="my-12 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">Every image a brand creates must connect with its customers. We are creating intelligent assets that not only express your brand, but also grow your bottom line.</p>
+   
+            <div class="flex justify-center items-center">
+                <img src="../dist/img/portfolio.png" alt="portfolio">
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+            <h1 class="mb-12 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">Affordable Way to Tell Your,
+                <span class="bg-clip-text text-transparent bg-gradient-to-br from-primary to-secondary">Product Professionally</span></h1>
+            <p class="my-12 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">Fully-customized and planned according to your budget.</p>
+            <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+                <!-- Pricing Card -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-lg shadow xl:p-8 ">
+                    <h3 class="mb-4 text-2xl font-semibold">Basic</h3>
+                    <p class="font-light text-gray-500 sm:text-lg ">High quality professional photographs of a single product.</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$29</span>
+                        <span class="text-gray-500">/month</span>
+                    </div>
+                    <!-- List -->
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>Full Commercial License on Photos</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>5 Final Photos</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>Shot List & Visual Art Direction</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>Professional Photographer</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-gray-700 font-bold rounded-lg text-sm px-5 py-2.5 text-center border hover:bg-gray-900 hover:text-gray-50">Book Now</a>
+                </div>
+                <!-- Pricing Card -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-lg shadow xl:p-8 ">
+                    <h3 class="mb-4 text-2xl font-semibold">Pro</h3>
+                    <p class="font-light text-gray-500 sm:text-lg">High quality professional photographs of their products.</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$79</span>
+                        <span class="text-gray-500">/month</span>
+                    </div>
+                    <!-- List -->
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>All in basic plan</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>15 Final Photos</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>Professional Retouching</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>Day of Photo Assistant / Stylist </span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-gray-700 font-bold rounded-lg text-sm px-5 py-2.5 text-center border hover:bg-gray-900 hover:text-gray-50">Book Now</a>
+                </div>
+                <!-- Pricing Card -->
+                <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-lg shadow xl:p-8 ">
+                    <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
+                    <p class="font-light text-gray-500 sm:text-lg">Taking your marketing to the next level.</p>
+                    <div class="flex justify-center items-baseline my-8">
+                        <span class="mr-2 text-5xl font-extrabold">$145</span>
+                        <span class="text-gray-500 ">/month</span>
+                    </div>
+                    <!-- List -->
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>All in Pro plan</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>25 Final Photos</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>Prop/Wardrobe Sourcing</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>Model Casting</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-gray-700 font-bold rounded-lg text-sm px-5 py-2.5 text-center border hover:bg-gray-900 hover:text-gray-50">Book Now</a>
+                </div>
+
+        </div>
+    </section>
+
+    <section>
+      <div class="bg-gradient-to-br from-primary to-secondary py-8 px-4 my-14 mx-auto max-w-screen-xl text-center rounded-lg lg:py-16 lg:px-12">
+        <div class="flex justify-between items-center h-48">
+          <h1 class="text-gray-50 text-5xl font-semibold">Want to get in touch? Let’s talk</h1>
+          <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 bg-gray-50 rounded-full shadow-lg ">
+            Contact Us
+         </a>  
+        </div>
+      </div>
+    </section>
+
+    <footer class="p-4 bg-gray-900 shadow md:flex md:items-center md:justify-between md:p-6">
+      <span class="text-sm text-gray-300 sm:text-center">© 2022 <a href="">Pixo</a>. All Rights Reserved.
+      </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-300 sm:mt-0">
+          <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6 ">Pricing</a>
+          </li>
+          <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">About Us</a>
+          </li>
+          <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Blog</a>
+          </li>
+      </ul>
+  </footer>
+  </body>
+</html>
